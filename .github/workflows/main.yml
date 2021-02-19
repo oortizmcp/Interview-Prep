@@ -3,7 +3,7 @@
 name: CI
 
 env:
-  resourceGroup: 'AZ-400'
+  resourceGroup: 'interview-prep'
   kubernetesVersion: '1.19.6'
   name: 'interviewprepaks21'
 
