@@ -7,7 +7,7 @@ RUN export GO111MODULE=on
 RUN go get github.com/oortizmcp/Interview-Prep/app
 RUN cd /build && git clone https://github.com/oortizmcp/Interview-Prep.git
 
-RUN cd /build/Interview-Prep/app && go build
+RUN cd /build/Interview-Prep/app && go build ./main.go
 
 EXPOSE 8080
 
