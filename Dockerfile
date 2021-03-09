@@ -7,7 +7,7 @@ RUN export GO111MODULE=on
 RUN go get github.com/AdminTurnedDevOps/Interview-Prep/app
 RUN cd /build && git clone https://github.com/AdminTurnedDevOps/Interview-Prep.git
 
-RUN cd /build/Interview-Prep/app && go build
+RUN cd /build/Interview-Prep/app && go env -w GO111MODULE=auto && go build
 
 EXPOSE 8080
 
